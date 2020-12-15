@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>One Piece Quiz</title>
+</head>
+
+<body>
+    <header>
+        <section class="navbar navbar-warning bg-warning shadow-sm">
+            <section class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <span class="text-danger">RANK</span>
+                </a>
+                <img src="./Assets/onepiece-logo.png" alt="One Piece logo" class="logo">
+            </section>
+        </section>
+    </header>
+
+    <main>
+        <img src="./Assets/strawhat.jpg" alt="straw hat" id="background">
+        <section class="py-5 text-center container">
+            <p id="timer" class="hidden"><strong>Time: </strong><span id="time">05:00</span></p>
+
+            <section id="intro" class="row py-lg-5">
+                <section class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">One Piece Quiz Challenge</h1>
+                    <p class="lead text-muted">This is a quiz to test your knowledge of One Piece. But if you are a real
+                        fan you should pretty easily pass most of the questions!</p>
+                </section>
+                <section>
+                    <a href="#" id="start-btn" class="btn btn-danger my-2">Start Quiz</a>
+                </section>
+            </section>
+
+            <sectinon id="questions" class="hidden">
+                <section>
+                    <h1 id="question" class="fw-light"></h1>
+                </section>
+                <section id="answers"></section>
+            </sectinon>
+
+            <section id="report" class="hidden">
+                <h1 id="quiz-finished"></h1>
+                <p>Final Score: <span id="score"></span></p>
+                <form id="initial-form">
+                    <p>Enter initials:
+                        <input type="text" id="initial-input">
+                        <button class="btn btn-primary my-2">Submit</button>
+                    </p>
+                </form>
+            </section>
+
+            <section id="rank" class="hidden">
+                <em class="text-danger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-trophy" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"/>
+                      </svg>
+                </em>
+                <section id="list"></section>
+                <section id="buttons">
+                    <button id="home" class="btn btn-warning my-2">Home</button>
+                    <button id="clear" class="btn btn-primary my-2">Clear Rank</button>
+                </section>
+            </section>
+
+            <section id="status" class="hidden">
+                <hr>
+                <p id="result"></p>
+            </section>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

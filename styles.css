@@ -1,0 +1,90 @@
+@font-face {
+    font-family: onePieceFont;
+    src: url("Assets/one\ piece\ font\ 2.ttf");
+    font-weight: bold;
+  }
+
+* {
+    font-family: onePieceFont, sans-serif;
+    font-size: 20px;
+}
+
+.text-danger {
+    font-size: 30px;
+}
+
+.logo {
+    display: block;
+    width: 10%;
+    height: auto;
+    margin: 0 580px 0 480px;
+}
+
+main {
+    position: relative;
+    height: 100vw;
+    width: 100vw;
+    position : fixed
+}
+
+#background {
+    position: absolute;
+    opacity: 0.15;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+#timer {
+    padding-left: 90%;
+    font-size: 25px;
+}
+
+.lead {
+    margin-top: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#start-btn {
+    width: 20%;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-outline-secondary {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px; 
+    min-width: 50%;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#result {
+    font-size: 25px;
+}
+
+li {
+    list-style-type: upper-roman;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#list {
+    margin-top: 30px;
+}
+
+#buttons {
+    margin-top: 15px;
+}
