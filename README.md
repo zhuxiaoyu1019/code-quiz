@@ -1,4 +1,4 @@
-# 04 Web APIs: Quiz Game
+# Web APIs: Quiz Game
 
 ## Description
 
