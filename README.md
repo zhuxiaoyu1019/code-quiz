@@ -25,6 +25,12 @@ WHEN the game is over
 THEN I can save my initials and score
 ```
 
+**Techonologies Used**
+
+```
+ Javascript, HTML, and CSS on top of the Bootstrap framework
+```
+
 
 ## Mock-Up
 
